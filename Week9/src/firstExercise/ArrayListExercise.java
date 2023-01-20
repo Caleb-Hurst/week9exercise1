@@ -14,7 +14,7 @@ public class ArrayListExercise {
 		arrayListExercise.print(chores);
 		arrayListExercise.removeChore(chores, "Wash Dishes");
 		arrayListExercise.print(chores);
-		arrayListExercise.updatedArray(chores, "Code for an hour");
+		arrayListExercise.updatedArray(chores, "Code for an hour",1);
 		arrayListExercise.print(chores);
 	}
 
@@ -31,14 +31,13 @@ public class ArrayListExercise {
 		for (String chore : chores) {
 			System.out.println(chore);
 		}
-
 		System.out.println("");
 		System.out.println("-------");
 		System.out.println("");
 	}
 
-	private void updatedArray(List<String> chores, String chore) {
-		chores.set(1, chore);
+	private void updatedArray(List<String> chores, String chore, int a) {
+		chores.set(a, chore);
 
 	}
 
